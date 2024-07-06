@@ -8,21 +8,28 @@ import MainPage from './routes/MainPage'
 import BackNav from './routes/BackNav'
 import MenuList from './routes/MenuList'
 import Menu from './routes/Menu'
-import '@/app/index.css'
 import Cart from './routes/Cart'
+import Error from './pages/Error'
+import '@/app/index.css'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <MainPage/>
+    element: <MainPage/>,
+    errorElement: <Error/>
   },
   {
     path: '/menu',
     element: <BackNav/>,
+    errorElement: <Error/>,
     children: [
       {
         path: '/menu',
         element: <MenuList/>
+      },
+      {
+        path: '/menu/cart',
+        element: <Cart/>,
       },
       {
         path: '/menu/:category',
@@ -36,10 +43,6 @@ const router = createBrowserRouter([
             console.error(e)
           }
         }
-      },
-      {
-        path: '/menu/cart',
-        element: <Cart/>
       }
     ]
   }
