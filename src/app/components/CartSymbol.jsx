@@ -1,21 +1,29 @@
 import { Badge } from "@/components/ui/badge"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 
 const CartSymbol = () => {
   const navigate = useNavigate()
   const sessionData = JSON.parse(sessionStorage.getItem('item'))
   const [data, setData] = useState(sessionData)
-  let itemCount = sessionStorage.getItem('count')
+  const [itemCount, setItemCount] = useState()
 
-  window.addEventListener('storage', () => {
-    setData(JSON.parse(sessionStorage.getItem('item')))
-  })
-  if (data) {
-    sessionStorage.setItem('count', data.map((i) => i.quantity).reduce((a, b) => (a + b), 0))
-  } else {
-    sessionStorage.setItem('count', 0)
-  }
+  useEffect(()=>{
+    function session() {
+      setData(JSON.parse(sessionStorage.getItem('item')))
+    }
+    window.addEventListener('storage', session)
+    if (data) {
+      const count = data.map((i) => i.quantity).reduce((a, b) => (a + b), 0)
+      sessionStorage.setItem('count', count)
+      setItemCount(count)
+    } else {
+      sessionStorage.setItem('count', 0)
+      setItemCount(0)
+    }
+    return ()=>window.removeEventListener('storage', session)
+  }, [data])
+
 
   return (
     <div className='relative cursor-pointer' onClick={()=>navigate('/menu/cart')}>
