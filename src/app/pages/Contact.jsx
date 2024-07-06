@@ -3,13 +3,13 @@ import Heading from "@/app/components/Heading"
 import SubHeading from "@/app/components/SubHeading"
 import LocationTimings from "@/app/components/LocationTimings"
 import Footer from "@/app/components/Footer"
-import contact from "@/assets/findus.png"
+import contact from "@/assets/findus.avif"
 import { forwardRef } from "react"
 
 const Contact = forwardRef(function Contact(props, ref) {
   return (
     <>
-    <Container ref={ref} className="bg-[url('@/assets/bg.png')] flex justify-center items-center">
+    <Container ref={ref} className="bg-black flex justify-center items-center">
         <div className="w-full flex flex-col md:flex-row justify-around items-center gap-5 text-white">
             <div className="flex flex-col items-start gap-3">
                 <SubHeading>Contact</SubHeading>

@@ -72,7 +72,7 @@ const MenuList = () => {
   ]
 
   return (
-    <Container className="bg-[url('@/assets/bg.png')] flex justify-center items-center">
+    <Container className="bg-[url('@/assets/bg.avif')] flex justify-center items-center">
       <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 mt-16">
         {menuList.map((item) => (
           <ItemCard key={item.category} category={item.category} path={item.path} img={item.img}/>

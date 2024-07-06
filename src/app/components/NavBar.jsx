@@ -2,7 +2,7 @@ import { HamburgerMenuIcon, Cross2Icon } from '@radix-ui/react-icons'
 import 'primeicons/primeicons.css';
 
 import PrimaryNav from '@/app/components/PrimaryNav'
-import title from '@/assets/gericht.png'
+import title from '@/assets/gericht.avif'
 
 import { forwardRef, useEffect, useRef, useState } from "react"
 import { Outlet } from 'react-router-dom';

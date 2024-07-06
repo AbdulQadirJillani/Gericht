@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import Container from "@/app/components/Container"
 import Heading from "@/app/components/Heading"
 import SubHeading from "@/app/components/SubHeading"
-import home from "@/assets/welcome.png"
+import home from "@/assets/welcome.avif"
 import { forwardRef } from "react"
 import { useNavigate } from "react-router-dom"
 

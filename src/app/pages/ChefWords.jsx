@@ -1,12 +1,12 @@
 import Container from "@/app/components/Container"
 import SubHeading from "@/app/components/SubHeading"
 import Heading from "@/app/components/Heading"
-import chef from "@/assets/chef.png"
-import sign from "@/assets/sign.png"
+import chef from "@/assets/chef.avif"
+import sign from "@/assets/sign.avif"
 
 const ChefWords = () => {
   return (
-    <Container className="bg-[url('@/assets/bg.png')] flex justify-center items-center">
+    <Container className="bg-[url('@/assets/bg.avif')] flex justify-center items-center">
         <div className="w-full flex flex-col md:flex-row justify-around items-center gap-5 text-white">
             <img className="h-[60svh] md:h-[80svh]" src={chef} alt="" />
             <div className="flex flex-col items-start gap-3">

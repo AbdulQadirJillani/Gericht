@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils"
-import spoon from "@/assets/spoon.png"
+import spoon from "@/assets/spoon.avif"
 
 const SubHeading = ({ children, className, ...props }) => {
   return (

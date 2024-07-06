@@ -1,11 +1,11 @@
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
 
-import pic1 from "@/assets/gallery01.png"
-import pic2 from "@/assets/gallery02.png"  
-import pic3 from "@/assets/gallery03.png"  
-import pic4 from "@/assets/gallery04.png"
-import pic5 from "@/assets/gallery05.png"  
+import pic1 from "@/assets/gallery01.avif"
+import pic2 from "@/assets/gallery02.avif"  
+import pic3 from "@/assets/gallery03.avif"  
+import pic4 from "@/assets/gallery04.avif"
+import pic5 from "@/assets/gallery05.avif"  
 
 const x = [
   {imgId: 'beiwoqd', imgLink: pic1},

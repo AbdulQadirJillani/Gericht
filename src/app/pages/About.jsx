@@ -1,13 +1,13 @@
 import Container from "@/app/components/Container"
 import Heading from "@/app/components/Heading"
-import knife from '@/assets/knife.png'
-import spoon from '@/assets/spoon.png'
+import knife from '@/assets/knife.avif'
+import spoon from '@/assets/spoon.avif'
 import { forwardRef } from "react"
 
 const About = forwardRef(function About(props, ref) {
   return (
-    <Container ref={ref} className="text-white bg-[url('@/assets/bg.png')] flex justify-center items-center">
-        <main className="isolate relative flex flex-col items-center md:flex-row gap-8 before:content-[''] before:bg-[url('@/assets/G.png')] before:bg-center before:bg-[length:30svh] before:md:bg-[length:40svh] before:bg-no-repeat before:absolute before:inset-0 before:z-[-1]">
+    <Container ref={ref} className="text-white bg-[url('@/assets/bg.avif')] flex justify-center items-center">
+        <main className="isolate relative flex flex-col items-center md:flex-row gap-8 before:content-[''] before:bg-[url('@/assets/G.avif')] before:bg-center before:bg-[length:30svh] before:md:bg-[length:40svh] before:bg-no-repeat before:absolute before:inset-0 before:z-[-1]">
             <div className="flex flex-col justify-center items-end gap-3 max-w-[60ch] text-right">
                 <Heading>About Us</Heading>
                 <img className="rotate-180" src={spoon} alt="" />

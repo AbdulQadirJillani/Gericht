@@ -1,8 +1,8 @@
 import Laurels from '@/app/components/Laurels'
-import laurel1 from '@/assets/award01.png'
-import laurel2 from '@/assets/award02.png'
-import laurel3 from '@/assets/award03.png'
-import laurel5 from '@/assets/award05.png'
+import laurel1 from '@/assets/award01.avif'
+import laurel2 from '@/assets/award02.avif'
+import laurel3 from '@/assets/award03.avif'
+import laurel5 from '@/assets/award05.avif'
 
 const LaurelsList = () => {
   const laurelsList = [

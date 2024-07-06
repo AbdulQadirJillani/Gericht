@@ -13,8 +13,8 @@ const PrimaryNav = forwardRef(function PrimaryNav({ className, setDrawer, ...pro
         <li onClick={()=>handleClick('homeRef')}>Home</li>
         <li onClick={()=>handleClick('aboutRef')}>About</li>
         <li onClick={()=>handleClick('specialRef')}>Specials</li>
-        <li onClick={()=>handleClick('awardRef')}>Awards</li>
         <li onClick={()=>handleClick('galleryRef')}>Gallery</li>
+        <li onClick={()=>handleClick('awardRef')}>Awards</li>
         <li onClick={()=>handleClick('contactRef')}>Contact</li>
     </ul>
   )

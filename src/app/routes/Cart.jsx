@@ -6,7 +6,7 @@ import EmptyCart from "../components/EmptyCart"
 const Cart = () => {
   const [data, setData] = useState(JSON.parse(sessionStorage.getItem('item')))
   return (
-    <Container className="bg-[url('@/assets/bg.png')] flex justify-center items-center">
+    <Container className="bg-[url('@/assets/bg.avif')] flex justify-center items-center">
         {(data==null || data.length==0)
         ?
         <EmptyCart/>

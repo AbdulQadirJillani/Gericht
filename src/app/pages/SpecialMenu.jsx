@@ -2,7 +2,7 @@ import Container from "@/app/components/Container"
 import SpecialMenuItemList from "@/app/components/SpecialMenuItemList"
 import Heading from "@/app/components/Heading"
 import SubHeading from "@/app/components/SubHeading"
-import menu from '@/assets/menu.png'
+import menu from '@/assets/menu.avif'
 import { forwardRef } from "react"
 
 const SpecialMenu = forwardRef(function SpecialMenu(props, ref) {
